@@ -28,7 +28,7 @@ int main() {
 
     srand(time(0));     //Random Seed
     for(int iter = 0; iter < 100; iter++) {     //Iterate through the array
-        beta[iter] = (rand() + 1) % 100;       //Random integer 1 through 100
+        beta[iter] = (rand() % 100) + 1;       //Random integer 1 through 100
         sum += beta[iter];     //Takes the sum
         if (beta[iter] == 100)     //If value is 100
             hundreds++;     //Store it
@@ -41,11 +41,11 @@ int main() {
 }
 
 /*
-0 1 4 9 16 25 36 49 64 81
-100 121 144 169 196 225 256 289 324 361
-400 441 484 529 576 75 78 81 84 87
-90 93 96 99 102 105 108 111 114 117
-120 123 126 129 132 135 138 141 144 147
-Average: 48.63
-Number of 100s: 0
+1 4 9 16 25 36 49 64 81 
+100 121 144 169 196 225 256 289 324 361 
+400 441 484 529 576 75 78 81 84 87 
+90 93 96 99 102 105 108 111 114 117 
+120 123 126 129 132 135 138 141 144 147 
+Average: 98.29
+Number of 100s: 91
 */
